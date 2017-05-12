@@ -51,6 +51,7 @@ GEM
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
       mime-types (>= 1.16)
+    coderay (1.1.1)
     concurrent-ruby (1.0.5)
     debug_inspector (0.0.3)
     dotenv (2.2.1)
@@ -80,6 +81,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.5)
       mime-types (>= 1.16, < 4)
+    method_source (0.8.2)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
@@ -101,6 +103,10 @@ GEM
     nokogiri (1.7.2)
       mini_portile2 (~> 2.1.0)
     pg (0.20.0)
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
     puma (3.8.2)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
@@ -150,6 +156,7 @@ GEM
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
     sixarm_ruby_unaccent (1.1.1)
+    slop (3.6.0)
     spring (2.0.1)
       activesupport (>= 4.2)
     sprockets (3.7.1)
@@ -193,6 +200,7 @@ DEPENDENCIES
   money-rails
   newrelic_rpm
   pg
+  pry
   puma
   quiet_assets
   rails (= 4.2.6)
