@@ -1,3 +1,7 @@
+<% if cart == {} %>
+  <h1> Cart Is Empty! </h1>
+  <%= link_to "Back To Home", root_path, class: 'btn btn-lg btn-primary' %>
+<% else %>
 <section class="cart-show">
 
   <header class="page-header">
@@ -16,9 +20,10 @@
       </thead>
       <tbody>
         <% @cart_total = 0 %>
-        <% cart.each do |product_id, details| %>
-          <%= render 'item', product_id: product_id, details: details %>
-        <% end %>
+
+          <% cart.each do |product_id, details| %>
+            <%= render 'item', product_id: product_id, details: details %>
+          <% end %>
       </tbody>
       <tfoot>
         <tr>
@@ -49,5 +54,5 @@
       <% end %>
     </div>
   </div>
-
+<% end %>
 </section>
