@@ -134,3 +134,21 @@ cat3.products.create!({
 
 
 puts "DONE!"
+## REVIEW
+
+u1 = User.create!(first_name: 'Nawar', last_name: 'Tamawi', email: 'nawartamawi@gmail.com', password: '123')
+u2 = User.create!(first_name: 'Sindu', last_name: 'LHL', email: 'sindu@gmail.com', password: '123')
+
+p1.reviews.create!({
+  description:  'I didnt like that product',
+  rating: 1,
+  user: u1
+})
+
+p1.reviews.create!({
+  description:  'Nice Product indeed',
+  rating: 5,
+  user: u2
+})
+
+puts "DONE, seeded Reviews added as well!"
